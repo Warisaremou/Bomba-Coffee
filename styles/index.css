@@ -1,0 +1,105 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  scroll-behavior: smooth !important;
+  box-sizing: border-box !important;
+}
+
+@layer base {
+  body {
+    @apply font-fredoka bg-white dark:bg-dark-color duration-200 ease-in-out;
+  }
+}
+
+/* NavBar */
+.nav-bar {
+  @apply flex justify-between items-center py-5 bg-white dark:bg-dark-color backdrop-blur fixed top-0 z-50 left-0 right-0 px-[1rem] sm:px-[2rem] md:px-[3rem] lg:px-[4rem] xl:px-[5rem] 2xl:px-[9rem];
+}
+
+.nav-item {
+  @apply hidden lg:flex md:gap-11 lg:gap-36 xl:gap-60 items-center;
+}
+
+.nav-link {
+  @apply hover:text-brown-500 text-sm;
+}
+
+/* Icons */
+.icon {
+  @apply h-7 w-7 hover:bg-brown-50 dark:hover:bg-gray-700 p-[6px] rounded-full hover:-rotate-90 duration-300 
+  ease-in-out cursor-pointer;
+}
+
+.icon-2 {
+  @apply h-9 w-9 bg-[#fef3ef] dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-700 p-[6px] rounded-full duration-300 
+  ease-in-out cursor-pointer;
+}
+
+.play-icon {
+  @apply w-9 h-9 fill-white bg-brown-400 rounded-full p-[10px] cursor-pointer;
+}
+
+.icon-white {
+  @apply fill-white;
+}
+
+.icon-gray {
+  @apply fill-brown-600;
+}
+
+/** Sections **/
+/* Sections Title*/
+.section-title {
+  @apply relative text-brown-600 dark:text-white text-xl font-bold mb-10 after:content-[''] after:w-8 after:h-[3px] after:absolute 
+  after:bg-brown-600 after:rounded-full dark:after:bg-white after:left-0 after:-bottom-1;
+}
+
+/* Hero Section */
+.hero-section {
+  @apply mt-10 bg-hero-background bg-center bg-cover rounded-3xl text-white p-5 md:p-10 lg:py-14 lg:px-20 relative mb-20;
+}
+
+.hero-info {
+  @apply absolute -bottom-14 md:bottom-auto grid grid-cols-2 px-2 text-sm font-semibold gap-y-4 gap-x-2 
+  md:grid-cols-2 md:px-8 lg:px-16 drop-shadow-lg inset-x-5 bg-white/80 dark:bg-gray-700/80 
+  text-brown-400 dark:text-white backdrop-blur-sm py-4 md:py-7 rounded-xl md:inset-x-10 lg:inset-x-20;
+}
+
+.hero-item {
+  @apply border-r-0 md:border-r-[1px] last:border-r-0  border-brown-600 px-1 py-1;
+}
+
+/* About Section */
+
+/* Contact Section */
+.contact-info {
+  @apply text-base text-gray-700;
+}
+
+/* Menu page */
+
+.menu-title {
+  @apply text-brown-500 text-xl font-bold mb-2;
+}
+
+.menu-image {
+  @apply flex items-center justify-center w-full h-32 overflow-hidden md:h-52 rounded-t-xl;
+}
+
+/* Footer Section */
+.footer-social-icon {
+  @apply w-4 md:w-5 h-4 md:h-5 transition-all duration-100 ease-in-out cursor-pointer fill-brown-400 hover:-translate-y-1;
+}
+
+/*
+.overlay {
+  @apply absolute inset-0 h-auto w-full bg-gray-600 rounded-[25px] opacity-50 z-0;
+}
+*/
+
+/* Inputs */
+.select-input {
+  @apply w-full py-1 border-none focus:bg-transparent focus:outline-none bg-transparent;
+}
