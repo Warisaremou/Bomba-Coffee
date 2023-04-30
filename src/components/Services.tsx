@@ -21,7 +21,7 @@ export default function Services() {
           </h1>
           <p className="pt-3 text-sm text-justify text-gray-800 pb-7">
             Si vous cherchez à créer une atmosphère chaleureuse et conviviale dans votre restaurant,
-            rien ne fonctionne mieux qu'un bon café. Le café est la boisson préférée de nombreuses
+            rien ne fonctionne mieux qu&apos;un bon café. Le café est la boisson préférée de nombreuses
             personnes à travers le monde, et son arôme et sa saveur peuvent évoquer des souvenirs
             agréables pour beaucoup de gens.
           </p>
@@ -33,7 +33,7 @@ export default function Services() {
               : "-translate-x-full opacity-0"
           } transition-transform duration-700 ease-out`}
         >
-          <Image src={TogetherImg} alt="" className="object-cover w-full h-full" />
+          <Image src={TogetherImg} alt="" className="object-cover w-full h-full" priority />
         </div>
       </div>
     </div>

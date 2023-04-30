@@ -18,7 +18,7 @@ export default function AboutSection() {
               : "-translate-x-full opacity-0"
           } transition-transform duration-700 ease-out`}
         >
-          <Image src={aboutImg} alt="" className="object-cover w-full h-full" />
+          <Image src={aboutImg} alt="" className="object-cover w-full h-full" priority />
         </div>
         <div
           className={`${
